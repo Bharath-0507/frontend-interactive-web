@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Interactive Rating</title>
+</head>
+<body>
+    <div class="main1 ">
+        <div class="mark">
+            <img class ="img-star" src="icon-star.svg" alt="star">
+        </div>
+         <p class="content"><span class="ques">How did we do?</span><br>Please let us know how we did
+            with your suport request. All feedback is apreciated
+            to help us improve our offering</p>
+        <br>
+        <div name="rating" id="rating">
+                <button class="rating-item" id="1" value="1" >1</button>
+                <button class="rating-item" id="2" value="2" >2</button>
+                <button class="rating-item" id="3" value="3" >3</button>
+                <button class="rating-item" id="4" value="4" >4</button>
+                <button class="rating-item" id="5" value="5" >5</button>
+        </div>
+        <button id = "submit" onclick="button()">SUBMIT</button>
+    </div>
+    <div class="main2 display">
+        <img class = "phone" src="illustration-thank-you.svg" alt="img">
+        <p class="ratescore">You selected <span class ="rate"></span> out of 5 <br></p> 
+        <p class="thx">Thank you!</p>
+        <p class="content2">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
